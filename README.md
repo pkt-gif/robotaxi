@@ -75,3 +75,7 @@ Bluetooth 명령
 DHT11 데이터 수신 로직은 구현했으나, FreeRTOS 환경에서 통신 타이밍의 안정성을 확보하지 못해 현재 Bluetooth 출력에는 테스트용 고정값을 사용합니다.
 
 </details>
+
+## 유튜브 영상
+🎬 [유튜브(YouTube) 로보택시 시연 영상](https://www.youtube.com/shorts/1cFvFcStp3M)
+🎬 [유튜브(YouTube) 자율주행 시연 영상](https://www.youtube.com/shorts/8N2YOQ3bM_4)

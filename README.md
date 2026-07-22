@@ -24,6 +24,14 @@ Bluetooth 명령으로 자율주행과 수동주행을 전환할 수 있으며, 
 - 후진·회전 상태에 따른 LED 및 부저 알림
 - Mutex를 이용한 센서 데이터 동기화
 
+## Task 구성
+
+| Task | 우선순위 | 역할 |
+|---|---:|---|
+| `SensorTask` | High | 3방향 초음파 거리 측정 및 IR 센서 상태 확인 |
+| `ManualTask` | Above Normal | Bluetooth 명령 처리 및 자율·수동 모드 전환 |
+| `DriveTask` | Normal | 장애물 회피 판단 및 차동 구동 기반 자율주행 제어 |
+
 ## 시스템 동작 흐름
 
 ```text
